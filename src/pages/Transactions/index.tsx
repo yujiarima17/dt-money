@@ -1,10 +1,14 @@
+import { useContext } from "react";
 import { Header } from "../../components/Header";
 import { Summary } from "../../components/Summary";
 import { SearchForm } from "./components/SearchForm";
 import { PriceHighlight, TransactionsContainer, TransactionsTable } from "./styles";
+import { TransactionsContext } from "../../contexts/TransactionsContext";
+
 
 export function Transactions(){
-
+    const {} = useContext(TransactionsContext)
+   
     return(
         <div>
             <Header/>
@@ -12,43 +16,28 @@ export function Transactions(){
          <TransactionsContainer>
             <SearchForm/>
             <TransactionsTable>
-                <tbody>
-                    <tr>
+              
+                <tbody> 
+                    {transactions.map(transaction =>{
+                       return (
+                      
+                  
+                    <tr key={transaction.id}>
                         <td width="50%">
-                            Desenvolvimento de site
+                           {transaction.description}
                         </td>
                         <td>
-                            <PriceHighlight variant="income">
-                            R$ 12.000,00
-                            </PriceHighlight>
-                        </td>
-                        <td>Venda</td>
-                        <td>13/04/2022</td>
-                    </tr>
-                    <tr>
-                        <td width="50%">
-                          Lanche
-                        </td>
-                        <td>
-                            <PriceHighlight variant="outcome">  - 60,00</PriceHighlight>
-                          
-                        </td>
-                        <td>Venda</td>
-                        <td>13/04/2022</td>
-                    </tr>
-                    <tr>
-                        <td width="50%">
-                            Alimentação
-                        </td>
-                        <td>
-                            <PriceHighlight variant="income">
-                            R$ 12.000,00
+                            <PriceHighlight variant={transaction.type}>
+                           {transaction.price}
                             </PriceHighlight>
                             
                         </td>
-                        <td>Venda</td>
-                        <td>10/04/2022</td>
+                        <td>{transaction.category}</td>
+                        <td>{transaction.createdAt}</td>
                     </tr>
+                    )
+                })}
+                 
                     
                 </tbody>
             </TransactionsTable>
