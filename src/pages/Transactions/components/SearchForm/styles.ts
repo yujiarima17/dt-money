@@ -13,11 +13,12 @@ export const SearchFormContainer = styled.form`
 
     &::placeholder{
         color: ${props=>props.theme['gray-500']};
-    }
-button{
+    }}
+ button{
     display: flex;
     align-items: center;
     gap: 0.75rem;
+
     border: 0;
     padding: 1rem;
     background: transparent;
@@ -25,12 +26,20 @@ button{
     color: ${props=>props.theme['green-300']};
     font-weight: bold;
     border-radius: 6px;
-    &:hover{
+
+    cursor: pointer;
+
+    &:disabled{
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+    &:not(:disabled):hover{
+        transition: background-color 0.2s, color 0.2s, border-color 0.2s;
         background: ${props=>props.theme['green-500']};
         border-color: ${props=>props.theme['green-500']};
         background-color: 0.2s  , color -.2s, border-color 0.2s;
     }
     }
 
- }
+ 
  `
