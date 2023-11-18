@@ -1,27 +1,35 @@
-# React + TypeScript + Vite
+# dt-money - Controle Financeiro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este é o repositório oficial do projeto **dt-money**, uma aplicação de controle financeiro desenvolvida em **React** com **Vite** e **TypeScript**. A aplicação utiliza diversas bibliotecas para oferecer uma experiência eficiente e agradável ao usuário. Abaixo estão listadas as principais bibliotecas utilizadas:
 
-Currently, two official plugins are available:
+- **@hookform/resolvers**: ^3.3.2
+- **@radix-ui/react-dialog**: ^1.0.5
+- **@radix-ui/react-radio-group**: ^1.1.3
+- **@types/styled-components**: ^5.1.30
+- **axios**: ^1.6.1
+- **phosphor-react**: ^1.4.1
+- **react**: ^18.2.0
+- **react-dom**: ^18.2.0
+- **react-hook-form**: ^7.48.2
+- **scheduler**: ^0.23.0
+- **styled-components**: ^6.1.1
+- **use-context-selector**: ^1.4.1
+- **zod**: ^3.22.4
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Como começar
 
-## Expanding the ESLint configuration
+1. **Clone o repositório:**
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+   ```bash
+   git clone https://github.com/seu-usuario/dt-money.git
+   cd dt-money
 
-- Configure the top-level `parserOptions` property like this:
+2. **Instale as dependências**
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+   ```bash
+   npm install
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. **Rode o programa**
+
+   ```bash
+   npm run dev
