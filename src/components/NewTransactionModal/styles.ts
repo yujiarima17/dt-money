@@ -84,7 +84,11 @@ export const Content = styled(Dialog.Content)`
         &::placeholder{
             color: ${props=> props.theme['gray-500']};
         }
+        &:active{
+          background: transparent;
+        }
     }
+
     button{
         height: 58px;
         border: 0;

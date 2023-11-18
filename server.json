@@ -1,20 +1,44 @@
 {
-    "transactions" : [
-        {
-         "id": 1,
-         "description" : "Desenvolvimento de site",
-         "type":"income",
-         "category" : "Venda",
-         "price" :1400,
-         "createdAt" : "2023-11-13T02:35:16.421Z"
-        },
-        {
-            "id": 1,
-            "description" : "Lanche",
-            "type":"outcome",
-            "category" : "Alimentação",
-            "price" :50,
-            "createdAt" : "2023-11-13T01:35:16.421Z"
-           }
-    ]
+  "transactions": [
+    {
+      "id": 1,
+      "description": "Desenvolvimento de site",
+      "type": "income",
+      "category": "Venda",
+      "price": 1400,
+      "createdAt": "2023-11-13T02:35:16.421Z"
+    },
+    {
+      "id": 2,
+      "description": "Lanche",
+      "type": "outcome",
+      "category": "Alimentação",
+      "price": 50,
+      "createdAt": "2023-11-13T01:35:16.421Z"
+    },
+    {
+      "id": 3,
+      "description": "Ingresso para Morumbi",
+      "type": "outcome",
+      "category": "Esporte",
+      "price": 50,
+      "createdAt": "2023-11-13T11:35:16.421Z"
+    },
+    {
+      "description": "Curso de React",
+      "category": "Educação",
+      "price": 1000,
+      "type": "outcome",
+      "createdAt": "2023-11-14T14:24:34.601Z",
+      "id": 4
+    },
+    {
+      "description": "Mesa de Sinuca",
+      "category": "Entretenimento",
+      "price": 5000,
+      "type": "outcome",
+      "createdAt": "2023-11-14T14:42:02.252Z",
+      "id": 5
+    }
+  ]
 }
