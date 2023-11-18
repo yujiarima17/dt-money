@@ -46,7 +46,6 @@ export function NewTransactionModal(){
                  <input type="text" placeholder="Categoria" required {...register('category')}/>
                
                  <Controller control ={control} name ="type" render = {({field})=>{
-                  console.log(field)
                   return(
                     <TransactionType onValueChange={field.onChange} value={field.value}>
                     <TransactionTypeButton variant="income" value="income">Entrada <ArrowCircleUp size={24}/></TransactionTypeButton>

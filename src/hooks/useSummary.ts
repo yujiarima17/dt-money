@@ -6,7 +6,7 @@ export function useSummary(){
       return context.transactions
     })
     const summary = useMemo(()=>{
-      transactions.reduce((acc,transaction)=>{
+      return transactions.reduce((acc,transaction)=>{
         if(transaction.type === 'income'){
           acc.income += transaction.price;
           acc.total += transaction.price
@@ -23,4 +23,5 @@ export function useSummary(){
   
 
     },[transactions])
-    return summary}
+    return summary
+  }
