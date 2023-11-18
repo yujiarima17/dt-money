@@ -33,3 +33,4 @@ Este é o repositório oficial do projeto **dt-money**, uma aplicação de contr
 
    ```bash
    npm run dev
+   npm run dev:server
